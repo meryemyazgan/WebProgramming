@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p::first-line {
+        font-weight: bold; /* bütün paragrafların ilk satırı koyu renkle yazılır.*/
+        color: brown;
+        word-spacing: 2px; /*kelimeler arası boşluk*/
+        letter-spacing: 1px; /*harfler arası boşluk*/
+      }
+
+      p.about::first-line {
+        /*claas ı about olanı bul*/
+        color: green;
+      }
+
+      p::first-letter {
+        font-size: 48px;
+        /*her paragrafın ilk harfini 48px yaptı.*/
+      }
+      ::selection {
+        background-color: purple;
+        /* seçilen yazının arkası mor olur.*/
+      }
+
+      p::after {
+        content: "#241222";
+        /*paragrafın sonuna tırnak içerisindeki yazı eklenir. html smiley emoji sayfasından emoji kodlarına bakarak onlar da eklenebilir.*/
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error vitae
+      laudantium temporibus sapiente facere dolor aliquam at quam repellendus
+      ducimus. Laboriosam omnis maiores vel ipsa vero sit odit consequatur
+      adipisci?
+    </p>
+
+    <p class="about">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem eum
+      sapiente eius nihil vel at quam ipsam quasi voluptas odio quod nulla,
+      accusantium perspiciatis fugiat! Ut pariatur corporis optio placeat.
+    </p>
+  </body>
+</html>

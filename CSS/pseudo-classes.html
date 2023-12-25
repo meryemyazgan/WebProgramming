@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      a {
+        border: 1px solid gray; /* kutucuk rengi*/
+        padding: 5px 8px;
+        display: inline-block; /* yazılar altındaki çizgiyi kaldırdı */
+        text-decoration: none;
+        width: 60px;
+        text-align: center; /*yazıyı ortladı */
+      }
+
+      a:link {
+        color: red;
+      }
+
+      a:visited {
+        color: green;
+      }
+
+      a:hover {
+        color: white;
+        background-color: yellow;
+        /*linkin üstüne geldiğinde ama tıklamadığında kutucuk sarı yazı beyaz olur. */
+      }
+
+      a:active {
+        color: white;
+        background-color: violet;
+        /*linke bir kere tıkladığında kutucuk mor yazı beyaz olur.*/
+      }
+
+      /*sırayla link, visited, hover ve active olmalı*/
+
+      div:hover p {
+        display: block;
+        /*yazının üzerine gelince içeriği gösterir*/
+      }
+      p {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="borders.html">Home</a>
+    <a href="box-model.html">Products</a>
+    <a href="combinators.html">About</a>
+
+    <div>
+      Click here!
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus itaque
+        cum provident, iste, dignissimos expedita aperiam tenetur magnam quod
+        corrupti commodi eos dolor at ipsum. Libero nam aspernatur accusamus
+        optio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+        laborum porro, similique ipsa rem exercitationem doloremque aspernatur
+        id blanditiis qui omnis dolorum nisi aperiam quibusdam quidem nostrum
+        illum ut aliquid!
+      </p>
+    </div>
+  </body>
+</html>
